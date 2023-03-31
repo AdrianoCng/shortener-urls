@@ -4,7 +4,12 @@
     "description": "Shortener urls",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon index.js"
+        "dev": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "18.15.0",
+        "npm": "8.3.0"
     },
     "author": "",
     "license": "ISC",
