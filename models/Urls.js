@@ -7,7 +7,7 @@ const Url = sequilize.define('Url', {
         allowNull: false,
     },
     originalUrl: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
     },
     shortUrl: {
