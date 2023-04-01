@@ -13,8 +13,15 @@ const Url = sequilize.define('Url', {
     shortUrl: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    clicks: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        defaultValue: 0,
     }
 });
+
+Url.pr
 
 
 module.exports = Url;

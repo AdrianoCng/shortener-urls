@@ -15,6 +15,8 @@ const getUrl = async (req, res) => {
         return res.status(404).send('Not found')
     }
 
+    url.increment('clicks');
+
     res.redirect(url.dataValues.originalUrl)
 }
 
@@ -41,7 +43,8 @@ const postUrl = async (req, res) => {
     const newUrl = await Url.create({
         urlID,
         originalUrl,
-        shortUrl
+        shortUrl,
+        clicks: 0
     })
 
     if (!newUrl) {
